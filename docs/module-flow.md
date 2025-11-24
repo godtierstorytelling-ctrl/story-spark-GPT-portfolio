@@ -153,7 +153,7 @@ Routing logic:
 "plot-skeleton"   → "wordsmith-lab"
 "wordsmith-lab"   → "complete"
 
-
+```
 If a module ever explicitly sets `result.nextModule`, the system honors that instead—allowing for future branching or alternative flows.
 
 ---
@@ -174,3 +174,50 @@ These loops can be added later by modifying the router mapping.
 # 🔒 Redirect Logic in the Flow
 
 Before any module receives input, Story Spark checks for off-topic content:
+
+User Input
+↓
+Redirect Logic?
+│
+├── Yes → show redirect message, halt routing
+↓
+└── No → continue into active module
+
+
+This ensures Story Spark remains strictly within the storytelling domain.
+
+---
+
+# 🌟 Upsell Logic in the Flow
+
+After each module produces output, Story Spark checks whether the input suggests interest in advanced features.
+
+If so, Story Spark adds:
+
+module output
+
+non-intrusive upgrade note (Story Engine GPT)
+
+
+This logic never blocks module progression.
+
+---
+
+# 🏁 Summary
+
+The module flow is:
+
+- Linear  
+- State-based  
+- Modular  
+- Predictable  
+- Expandable  
+
+It reflects how a true multi-step GPT application behaves, and is fully prepared for a future transition into:
+
+- a web app  
+- a mobile app  
+- a multi-session workspace  
+- a database-backed story-building platform  
+
+Story Spark’s flow is simple by design — but architecturally robust enough for future branching, revisits, or alternate narrative pathways.

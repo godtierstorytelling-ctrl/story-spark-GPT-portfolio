@@ -152,11 +152,11 @@ Story Spark → Story Engine GPT → Story Bible → Story Forge → Saga Smithy
 An integrated creativity platform spanning novels, screenplays, television, comics, and games.
 
 ### 4. **Become a multi-platform experience**
-Web app  
-Mobile app  
-Desktop app  
-Voice-based brainstorming  
-Shared or collaborative writing sessions  
+- Web app  
+- Mobile app  
+- Desktop app  
+- Voice-based brainstorming  
+- Shared or collaborative writing sessions  
 
 ### 5. **Empower marginalized and historically excluded creatives**
 A core pillar of the god-Tier mission is inclusivity and creative liberation.

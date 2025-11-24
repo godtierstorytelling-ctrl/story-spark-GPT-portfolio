@@ -181,15 +181,17 @@ This supports:
 
 **Purpose:** Extend Story Spark without schema changes.
 
+```
 metadata
+--------
+id              uuid (primary key)
+parent_type     text        -- story, module, version
+parent_id       uuid
+key             text
+value           text or jsonb
+created_at      timestamp
 
-id (uuid, primary key)
-parent_type (text) -- story, module, version
-parent_id (uuid)
-key (text)
-value (text or jsonb)
-created_at (timestamp)
-
+```
 
 Examples:
 
@@ -207,11 +209,13 @@ This avoids schema bloat.
 
 A typical Story Spark session would generate the following sequence:
 
+```
 User → Story → 5 Story Modules → Version Snapshot → Optional Metadata
-
+```
 
 Or visually:
 
+```
 Create Story
 ↓
 Populate modules (Idea Spark → Word Seed → ...)
@@ -219,7 +223,9 @@ Populate modules (Idea Spark → Word Seed → ...)
 Generate version snapshot
 ↓
 Save / revisit / export
+```
 
+This mirrors the GPT prototype’s modular experience.
 
 ---
 
@@ -243,26 +249,29 @@ This design maintains fidelity to the current GPT workflow while future-proofing
 ### Collaboration
 Add tables for:
 
+```
 collaborators
 permissions
 story_comments
-
+```
 
 ### Branching stories
 Add:
 
+```
 story_branches
 branch_parent_id
 branch_label
+```
 
-
-### Analytics
+### Analytics and Logging
 Add optional log tables:
 
+```
 module_usage_logs
 error_logs
 ai_cost_tracking
-
+```
 
 ---
 

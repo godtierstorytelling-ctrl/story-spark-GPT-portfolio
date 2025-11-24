@@ -132,43 +132,36 @@ Redirect messages rotate through a set of variations to keep the experience warm
 
 ---
 
-# 🌟 4. Upsell Logic (upsell-logic.js)
+# 🌟 4. Upsell Logic (`upsell-logic.js`)
 
-Upsell logic provides gentle, non-intrusive nudges when the user expresses interest in advanced features available in the Story Engine GPT.
+Upsell logic provides gentle, non-intrusive suggestions when the user expresses interest in advanced features found in the **Story Engine GPT**.
 
-Trigger words include:
+### Trigger phrases include:
 
-“advanced outline”
+- “advanced outline”  
+- “custom structure”  
+- “detailed beat sheet”  
+- “premium tools”  
+- “pro version”  
 
-“custom structure”
+### How upsell logic works
 
-“detailed beat sheet”
+1. The module processes input normally  
+2. Story Spark checks if the user’s request matches an upsell trigger  
+3. If yes → an optional upsell note is appended to the module’s output  
+4. The upsell message is always **optional** and never blocks progression
 
-“non-free tools”
-
-“premium workflow”
-
-How upsell logic works:
-
-The module processes input normally
-
-Story Spark checks if the user’s request matches an upsell trigger
-
-If yes → an optional upsell note is appended to the output
-
-The message is always optional, never blocking
-
-Example upsell message:
+### Example upsell message:
 
 FYI — the Story Engine GPT can autofill advanced frameworks and export full beat sheets when you're ready to go deeper!
 
-Why this matters:
+### Why this matters
 
-Creates value pathways into the larger product ecosystem
+- Creates a natural upgrade path  
+- Mirrors standard SaaS “free → pro” systems  
+- Keeps writers in flow without interruption  
+- Guides users toward the larger Story Engine ecosystem  
 
-Mirrors standard SaaS upgrade patterns
-
-Keeps creative flow uninterrupted
 
 ---
 

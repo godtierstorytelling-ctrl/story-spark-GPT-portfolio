@@ -114,17 +114,20 @@ Examples of what gets stored here:
 
 **Purpose:** Store the output of each Story Spark module.
 
+```sql
+
 story_modules
+-------------
+id              uuid (primary key)
+story_id        uuid (foreign key → stories.id)
+module_name     text          -- e.g., idea-spark, world-seed, etc.
+input_text      text
+output_text     text
+module_order    integer       -- 1 to 5
+created_at      timestamp
+updated_at      timestamp
 
-id (uuid, primary key)
-story_id (uuid, foreign key → stories.id)
-module_name (text) -- e.g., idea-spark, world-seed, etc.
-input_text (text)
-output_text (text)
-module_order (integer) -- 1 to 5
-created_at (timestamp)
-updated_at (timestamp)
-
+```
 
 Each row represents one module’s output.  
 This allows modules to be revisited and rewritten later.

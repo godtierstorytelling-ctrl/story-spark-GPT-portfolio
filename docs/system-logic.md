@@ -52,7 +52,9 @@ Router returns: "character-forge"
 If a module ever explicitly sets result.nextModule, that value overrides the router’s default logic.
 This makes the system extensible and future-proof.
 
-🧱 2. State Manager (state-manager.js)
+---
+
+# 🧱 2. State Manager (state-manager.js)
 
 The state manager maintains all session-related information:
 
@@ -95,7 +97,9 @@ Example state snapshot:
 
 This resembles how React apps, serverless functions, and GPT orchestration systems manage session data.
 
-🔒 3. Redirect Logic (redirect-logic.js)
+---
+
+# 🔒 3. Redirect Logic (redirect-logic.js)
 
 Redirect logic ensures Story Spark stays focused on storytelling by intercepting:
 
@@ -143,7 +147,9 @@ Reflects real-world safety and domain guardrails
 
 Ensures every module receives valid inputs
 
-🌟 4. Upsell Logic (upsell-logic.js)
+---
+
+# 🌟 4. Upsell Logic (upsell-logic.js)
 
 Upsell logic provides gentle, non-intrusive nudges when the user expresses interest in advanced features available in the Story Engine GPT.
 
@@ -181,7 +187,9 @@ Mirrors standard SaaS upgrade patterns
 
 Keeps creative flow uninterrupted
 
-🔗 5. The Interaction Pipeline
+---
+
+# 🔗 5. The Interaction Pipeline
 
 Every user message flows through Story Spark using this sequence:
 
@@ -211,7 +219,9 @@ controlled transitions
 
 expandable integration points
 
-🔮 6. Future Enhancements to System Logic
+---
+
+# 🔮 6. Future Enhancements to System Logic
 
 As Story Spark evolves into a full app, system logic will expand to include:
 
@@ -247,7 +257,9 @@ TypeScript migration
 
 Full typing for stronger safety and predictability.
 
-🏁 Summary
+---
+
+# 🏁 Summary
 
 The system logic layer ensures Story Spark behaves like a modular, professional-grade application:
 

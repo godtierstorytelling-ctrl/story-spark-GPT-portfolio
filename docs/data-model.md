@@ -49,6 +49,7 @@ These entities are highly scalable and support future app requirements such as c
 | +-----------------+
 
 
+
 This shows:  
 - One user → many stories  
 - One story → many modules  
@@ -61,13 +62,15 @@ This shows:
 
 **Purpose:** Authentication + ownership.
 
+```sql
 users
+------
+id              uuid (primary key)
+email           text (unique)
+username        text
+created_at      timestamp
 
-id (uuid, primary key)
-email (text, unique)
-username (text)
-created_at (timestamp)
-
+```
 
 Supabase auth will manage:
 - email/password  

@@ -54,38 +54,31 @@ This makes the system extensible and future-proof.
 
 ---
 
-# 🧱 2. State Manager (state-manager.js)
+# 🧱 2. State Manager (`state-manager.js`)
 
 The state manager maintains all session-related information:
 
-currentModule
+- `currentModule`  
+- `history` of interactions  
+- `metadata` (for future uses)
 
-history of interactions
+### Why centralized state?
 
-metadata (for future uses)
-
-Why centralized state?
-
-Predictability
-
-Simple debugging
-
-Easy expansion
-
-Avoids mismatched variable passing
-
-Supports future persistence (Supabase)
+- Predictability  
+- Simple debugging  
+- Easy expansion  
+- Avoids mismatched variable passing  
+- Supports future persistence (Supabase)
 
 Each call updates the state by:
 
-Changing the active module
+1. Changing the active module  
+2. Adding the user-message → module-response pair to `history`  
+3. Preserving metadata across modules
 
-Adding the user-message → module-response pair to history
+### Example state snapshot:
 
-Preserving metadata across modules
-
-Example state snapshot:
-
+```json
 {
   "currentModule": "plot-skeleton",
   "history": [
@@ -95,7 +88,7 @@ Example state snapshot:
   "metadata": {}
 }
 
-This resembles how React apps, serverless functions, and GPT orchestration systems manage session data.
+```
 
 ---
 

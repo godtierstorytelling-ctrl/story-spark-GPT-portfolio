@@ -167,86 +167,82 @@ FYI — the Story Engine GPT can autofill advanced frameworks and export full be
 
 # 🔗 5. The Interaction Pipeline
 
-Every user message flows through Story Spark using this sequence:
+Every user message follows a consistent internal sequence, ensuring stability and predictability across the entire Story Spark system.
+
+The complete interaction pipeline looks like this:
 
 User Input
-   ↓
+↓
 Redirect Logic
-   ↓
+↓
 Router → Determines Current Module
-   ↓
+↓
 Module Logic (Idea Spark, World Seed, etc.)
-   ↓
+↓
 Upsell Logic
-   ↓
+↓
 State Updates
-   ↓
+↓
 Formatted Output to User
 
-This ensures:
 
-predictable behavior
+### Why this matters
 
-strong guardrails
+- Creates a stable user flow  
+- Isolates system responsibilities  
+- Mirrors real-world GPT orchestration patterns  
+- Keeps modules simple and focused  
+- Enables future integrations (API, Supabase, Next.js)
 
-consistent output
-
-controlled transitions
-
-expandable integration points
+Each step can evolve independently as Story Spark grows into a full web application.
 
 ---
 
 # 🔮 6. Future Enhancements to System Logic
 
-As Story Spark evolves into a full app, system logic will expand to include:
+As Story Spark evolves, system logic will expand to support a full SaaS application. Planned enhancements include:
 
-Session persistence
+### **Session Persistence**
+- Store full story progress  
+- Sync across browser sessions  
+- Save multiple projects  
+- Powered by Supabase or Vercel KV  
 
-Supabase or Vercel KV to store full story sessions.
+### **Branching Pathways**
+- Genre-specific flows  
+- Advanced “pro mode”  
+- Ability to revisit earlier modules  
+- Conditional module unlocks  
 
-Branching pathways
+### **Telemetry**
+- Track module usage  
+- Identify friction points  
+- Improve GPT prompts over time  
 
-Alternate flows like:
+### **Middleware**
+- Input preprocessing  
+- Output formatting  
+- Sanitization  
+- Caching  
 
-genre-specific flows
+### **Rate Limiting**
+- Protects the system at scale  
+- Required for any production API  
 
-advanced “pro mode”
-
-returning to earlier modules
-
-multi-module revisions
-
-Telemetry
-
-Module analytics to help improve GPT prompts over time.
-
-Middleware
-
-API middleware to pre-process inputs or cache outputs.
-
-Rate limiting
-
-To protect the app at scale.
-
-TypeScript migration
-
-Full typing for stronger safety and predictability.
+### **TypeScript Migration**
+- Strong typing  
+- Predictable interfaces  
+- Easier long-term maintenance  
 
 ---
 
 # 🏁 Summary
 
-The system logic layer ensures Story Spark behaves like a modular, professional-grade application:
+The system logic layer ensures Story Spark behaves like a modular, production-quality application:
 
-Router → controls flow
+- **Router** → controls flow  
+- **State manager** → tracks session data  
+- **Redirect logic** → enforces boundaries  
+- **Upsell logic** → enhances product strategy  
 
-State manager → tracks progress
-
-Redirect logic → enforces domain boundaries
-
-Upsell logic → enhances product strategy
-
-Together, these components form the connective tissue of the entire Story Spark architecture.
-
-This foundation is ready for future evolution into a fully coded Next.js + Supabase + Vercel application.
+Together, these components form the internal engine that keeps Story Spark predictable, extensible, and ready for a full Next.js + Supabase implementation.

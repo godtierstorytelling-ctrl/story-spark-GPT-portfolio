@@ -33,20 +33,49 @@ All of these components together simulate a lightweight “app” experience ins
 This repo contains documentation and structured prompt files that power the prototype:
 
 ```
-story-spark/
+story-spark-portfolio/
 │
 ├── README.md
 │
 ├── prompts/
-│   ├── god-Tier Story Spark Prompts.pdf
-│   ├── god-Tier Story Spark Bible.pdf
-│   ├── Story Engine Scripts & Closers.pdf
-│   ├── Story Engine Knowledge Pack.pdf
-│   ├── Story Engine Knowledge Pack – Feature Comparison & Upsells.pdf
-│   └── god-Tier Story Spark GPT Programming.pdf
+│   ├── Story-Spark-Prompt-Book.pdf
+│   ├── Story-Spark-Knowledge-Pack.pdf
+│   ├── Story-Spark-Feature-Comparison-Upsells.pdf
+│   ├── Story-Spark-Scripts-and-Closers.pdf
+│   ├── Story-Spark-Bible.pdf
+│   └── (any other prompt/module PDFs)
 │
-└── docs/
-    └── notes.md  (optional space for ongoing documentation)
+├── docs/
+│   ├── architecture-overview.md
+│   ├── module-flow-diagram.png
+│   ├── lifecycle-diagram.png
+│   ├── prompts-overview.md
+│   └── pseudocode-overview.md   (placeholder for what we will create)
+│
+├── src/
+│   ├── modules/
+│   │   ├── idea-spark.js (pseudocode)
+│   │   ├── world-seed.js (pseudocode)
+│   │   ├── character-forge.js (pseudocode)
+│   │   ├── plot-skeleton.js (pseudocode)
+│   │   └── wordsmith-lab.js (pseudocode)
+│   │
+│   ├── system/
+│   │   ├── router.js (pseudocode)
+│   │   ├── state-manager.js (pseudocode)
+│   │   ├── redirect-logic.js (pseudocode)
+│   │   └── upsell-logic.js (pseudocode)
+│   │
+│   └── index.js (pseudocode "entry point")
+│
+├── images/
+│   ├── storiespark-ui-screenshot.png
+│   ├── module-flow-diagram.png
+│   ├── architecture-diagram.png
+│   └── lifecycle-diagram.png
+│
+└── LICENSE (optional)
+
 ```
 
 ### **Included Files**

@@ -55,12 +55,10 @@ These PDFs contain all current prompt engineering, logic, and user-flow scriptin
 
 * **god-Tier Story Spark Prompts** 
 * **god-Tier Story Spark Bible** 
-* **god-Tier Writing Class Covers** 
 * **Story Engine Scripts & Closers** (opening/closing logic + templates) 
 * **Story Engine Knowledge Pack** (redirect rules + module templates) 
 * **Feature Comparison & Upsells Pack** (inline upsell rules) 
 * **god-Tier Story Spark GPT Programming** (core instruction sets #1–#3) 
-* **Business Model / Genre Schools Pack** (strategic context, not directly used in this prototype but relevant for future expansion) 
 
 ---
 

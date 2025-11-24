@@ -144,17 +144,21 @@ This allows modules to be revisited and rewritten later.
 
 **Purpose:** Full snapshots of a story at any point in time.
 
+```sql
 story_versions
+--------------
+id              uuid (primary key)
+story_id        uuid (foreign key → stories.id)
+version_number  integer
+full_snapshot   jsonb
+created_at      timestamp
 
-id (uuid, primary key)
-story_id (uuid, foreign key → stories.id)
-version_number (integer)
-full_snapshot (jsonb)
-created_at (timestamp)
+```
 
 
 A `full_snapshot` contains:
 
+```
 {
 "idea_spark": { ... },
 "world_seed": { ... },
@@ -162,7 +166,7 @@ A `full_snapshot` contains:
 "plot_skeleton": { ... },
 "wordsmith_lab": { ... }
 }
-
+```
 
 This supports:
 

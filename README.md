@@ -143,13 +143,13 @@ The prototype uses:
 
 This repo currently stores **documentation**, **logic**, and **prompts**, not application code.
 
-You are using GitHub here to document:
+I am using GitHub here to document:
 
-* your workflow
-* your architecture
-* your structured prompt files
-* your system design
-* and the logic powering your GPT prototype
+* my workflow
+* my architecture
+* my structured prompt files
+* my system design
+* and the logic powering my GPT prototype
 
 This is absolutely a valid technical deliverable in the era of GPT-based development.
 
